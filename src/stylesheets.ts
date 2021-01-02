@@ -1,15 +1,12 @@
 import { ALWAYS } from "userscripter/lib/environment";
 import { Stylesheets, stylesheet } from "userscripter/lib/stylesheets";
 
+import stylesheetMain from "./stylesheets/main.scss";
+
 const STYLESHEETS = {
     main: stylesheet({
         condition: ALWAYS,
-        css: `
-            html body {
-                background-color: rgb(144, 238, 144) !important;
-                color: green !important;
-            }
-        `,
+        css: stylesheetMain,
     }),
 } as const;
 
