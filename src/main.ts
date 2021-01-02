@@ -19,7 +19,7 @@ userscripter.run({
     name: U.name,
     initialAction: () => {
       log.log(`${U.name} ${U.version}`);
-      instaAutoLiker();
+      setInterval(instaAutoLiker, 1000);
     },
     stylesheets: STYLESHEETS,
     operationsPlan: {
